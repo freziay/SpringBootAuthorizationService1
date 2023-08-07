@@ -27,6 +27,7 @@ public class AuthorizationController {
     public List<Authorities> getAuthorities(@Valid User user) throws InvalidCredentials, UnauthorizedUser {
         return service.getAuthorities(user);
     }
+
     @ExceptionHandler(InvalidCredentials.class)
     public ResponseEntity<String> icHandler(InvalidCredentials e) {
         return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
