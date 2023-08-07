@@ -1,7 +1,6 @@
 package ru.netology.springbootauthorizationservicenew.repository;
 
 import org.springframework.stereotype.Repository;
-
 import ru.netology.springbootauthorizationservicenew.authorities.Authorities;
 import ru.netology.springbootauthorizationservicenew.main.User;
 
