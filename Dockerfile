@@ -1,4 +1,4 @@
 FROM openjdk:17-jdk-alpine
-EXPOSE 8080
-COPY target/springBootAuthorizationServicenew-0.0.1-SNAPSHOT.jar app.jar
-CMD ["java", "-jar", "app.jar"]
+EXPOSE 8081
+ADD target/springBootAuthorizationServicenew-0.0.1-SNAPSHOT.jar myapp.jar
+ENTRYPOINT ["java","-jar","/myapp.jar"]
